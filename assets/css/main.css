@@ -459,6 +459,14 @@ a.back-to-top:hover, a.back-to-top:focus {
   text-align: center;
 }
 
+.timeline .content-text li{
+  list-style-type: disc;
+  text-align: left;
+  margin-left: 10px;
+  padding-left: 0px;
+}
+
+
 .navbar-brand {
   position: relative;
   padding: 0px;
@@ -951,6 +959,12 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   line-height: 22px;
   text-align: left;
   padding-top: 10px;
+}
+
+.services-item .services-content ul li {
+  list-style-type: disc;
+  text-align: left;
+  margin-left: 10px;
 }
 
 .services-item:hover {
