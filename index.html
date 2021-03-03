@@ -6,7 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>Sejal Choudhary</title>
-
+    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript">
+        function submitForm() {
+          $.ajax({
+            url: "assets/contact-form-handler.php",
+            type: "POST",               
+          }).done(function( data ) {
+              alert(data);
+                if(data==1){
+                    alert('Mail Sent');
+                }
+                else
+                {
+                    alert('Error in sending mail!'); 
+                }
+          });
+          return false;
+        }
+    </script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
     <!-- Fonts -->
@@ -277,7 +295,7 @@
             <div class="col-md-6 col-lg-6 col-sm-12">
               <div class="contact-block">
                 <h2>Contact Form</h2>
-                <form id="contactForm">
+                <form name="contactForm" id="contactForm" method="post" onsubmit="return submitForm();">
                   <div class="row">
                     <div class="col-md-6">
                       <div class="form-group">
@@ -303,7 +321,7 @@
                         <div class="help-block with-errors"></div>
                       </div>
                       <div class="submit-button">
-                        <button class="btn btn-common" id="submit" type="submit">Send Message</button>
+                        <button class="btn btn-common" id="submit" name="submit" type="submit">Send Message</button>
                         <div id="msgSubmit" class="h3 text-center hidden"></div> 
                         <div class="clearfix"></div> 
                       </div>
