@@ -26,15 +26,21 @@ $email_subject = $subject;
 $email_body = "You have received a new message. ".
 " Here are the details:\n Name: $name \n ".
 "Email: $email_address\n Message \n $message";
-$headers = "From: $myemail\n";
-$headers .= "Reply-To: $email_address";
-$mail_status = mail($to,$email_subject,$email_body,$headers);
-if ($mail_status) { 
-    echo 1;
- }
- else { 
-    echo 0;  
- }
+$header = "From: noreply@example.com\r\n";
+$header.= "MIME-Version: 1.0\r\n";
+$header.= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+$header.= "X-Priority: 1\r\n";
+$mail_status = mail($to,$email_subject,$email_body,$header);
+if ($mail_status) { ?>
+  <script language="javascript" type="text/javascript">
+   alert('Thank you for the message.');
+  </script>
+  <?php
+  }else { ?>
+   <script language="javascript" type="text/javascript">
+    alert('Message failed. Please, send an email to sejalc230@gmail.com');
+   </script>
+  <?php }
 //header('Location: sejal129.github.io');
 }
 
