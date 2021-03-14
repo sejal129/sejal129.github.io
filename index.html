@@ -26,17 +26,6 @@
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <!-- Responsive Style -->
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-    <script type="text/JavaScript">
-      $(document).ready(function () {
-        $('#contactForm').submit(function (e) {
-          e.preventDefault();
-          var formData = $(this).serialize();
-          $.post("forms/contact-form-handler.php", formData).complete(function() {
-            console.log("Success");
-          });
-        });
-      });
-    </script>
   </head>
   <body>
 
@@ -150,7 +139,7 @@
           </div> 
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <div class="profile-wrapper wow fadeInRight" data-wow-delay="0.3s">
-              <h3>Hola Amigo!</h3>
+              <h3>Hello!</h3>
               <p>I am Sejal Choudhary, a 4th year undergraduate at Banasthali Vidyapith majoring in Computer Science and Engineering. I am pursuing opportunities in the field of Machine Learning and Web Development that can utilize my programming experience in different areas.</p>
               <div class="about-profile">
                 <ul class="admin-profile">
@@ -298,7 +287,7 @@
     <!-- Resume Section End -->
 
    
-    <!-- Contact Section Start -->
+    <!-- Contact Section Start
     <section id="contact" class="section-padding">      
       <div class="contact-form">
         <div class="container">
@@ -365,7 +354,7 @@
         </div>
       </div>   
     </section>
-    <!-- Contact Section End -->
+    Contact Section End -->
 
     <!-- Footer Section Start -->
     <footer class="footer-area section-padding">
