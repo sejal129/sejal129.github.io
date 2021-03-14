@@ -20,16 +20,28 @@ try {
     $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
     $mail->isSMTP();                                            //Send using SMTP
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    //$mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
+    $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+    //$mail->Username   = 'sejalc230@gmail.com';                     //SMTP username
+    //$mail->Password   = '';                               //SMTP password
+=======
+>>>>>>> 22f75912f83e26df4a1a2b7e1506e8d4c685c1f3
     $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
     $mail->Username   = 'sejalc230@gmail.com';                     //SMTP username
     $mail->Password   = '';                               //SMTP password
+<<<<<<< HEAD
 =======
     //$mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
     //$mail->Username   = 'sejalc230@gmail.com';                     //SMTP username
     //$mail->Password   = '';                               //SMTP password
 >>>>>>> 2c389e7... Removed Contact form
+=======
+>>>>>>> 3ab2067b7c9500073aa6c7ca73ccedda6b0efc59
+>>>>>>> 22f75912f83e26df4a1a2b7e1506e8d4c685c1f3
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         //Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
     $mail->Port       = 587;                                    //TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
