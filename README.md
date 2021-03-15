@@ -34,4 +34,4 @@ git remote add origin https://github.com/sejal129/sejal129.github.io.git
 git pull origin master                                             
 git push -u origin master 
 ```
-4. Hence, the portfolio website was hosted through GitHub: [Sejal Choudhary](https://sejal129.github.io/)
+4. Hence, the portfolio website: [Sejal Choudhary](https://sejal129.github.io/)
