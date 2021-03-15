@@ -19,7 +19,7 @@ The portfolio includes the following details:
 - Contact Details (Email Id)
 - Social Media links (LinkedIn, Twitter, Instagram, Facebook)
 
-## Deployment on github
+## Deployment through GitHub
 
 1. Created a repository with username.github.io, i.e., sejal129.github.io
 2. Navigated to the local project directory and created a local git repository.
