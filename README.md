@@ -12,7 +12,6 @@ Downloaded the sample code for the template and personalized it accordingly in V
 
 The portfolio includes the following details:
 - A short-description
-- Education
 - Projects and link to their source code (GitHub)
 - Work Experience (Internships and Open-Source)
 - Link to the resume
